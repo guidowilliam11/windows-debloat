@@ -7,21 +7,21 @@ Plugin [Claude Code](https://claude.com/claude-code) untuk bikin Windows kamu **
 **Cara A: dari terminal biasa** (PowerShell/CMD; ini jalan juga untuk pengguna aplikasi desktop Claude):
 
 ```
-claude plugin marketplace add guidowilliam11/claude-glowup
-claude plugin install windows-debloat@claude-glowup
+claude plugin marketplace add guidowilliam11/windows-debloat
+claude plugin install windows-debloat@windows-debloat
 ```
 
 **Cara B: dari dalam sesi `claude` di terminal:**
 
 ```
-/plugin marketplace add guidowilliam11/claude-glowup
-/plugin install windows-debloat@claude-glowup
+/plugin marketplace add guidowilliam11/windows-debloat
+/plugin install windows-debloat@windows-debloat
 ```
 
 **Cara C: dari aplikasi desktop Claude (tab Code):** ketik di chat:
 
 ```
-Install plugin windows-debloat dari marketplace guidowilliam11/claude-glowup
+Install plugin windows-debloat dari marketplace guidowilliam11/windows-debloat
 ```
 
 Claude akan menjalankan Cara A untukmu. Setelah selesai, buka **sesi baru** dan ketik `/windows-debloat`.
@@ -34,7 +34,7 @@ Lalu jalankan:
 /windows-debloat bersihkan dan percepat laptop saya
 ```
 
-> Disarankan pakai model **Opus 5.5**. Update ke versi terbaru: `/plugin marketplace update claude-glowup`.
+> Disarankan pakai model **Opus 5.5**. Update ke versi terbaru: `/plugin marketplace update windows-debloat`.
 
 ## Apa yang dilakukan
 
