@@ -8,7 +8,7 @@ Plugin [Claude Code](https://claude.com/claude-code) untuk bikin Windows kamu **
 
 ```
 claude plugin marketplace add guidowilliam11/claude-glowup
-claude plugin install windows-glowup@claude-glowup
+claude plugin install windows-debloat@claude-glowup
 ```
 
 **Cara B: dari dalam sesi `claude` di terminal:**
@@ -21,10 +21,10 @@ claude plugin install windows-glowup@claude-glowup
 **Cara C: dari aplikasi desktop Claude (tab Code):** ketik di chat:
 
 ```
-Install plugin windows-glowup dari marketplace guidowilliam11/claude-glowup
+Install plugin windows-debloat dari marketplace guidowilliam11/claude-glowup
 ```
 
-Claude akan menjalankan Cara A untukmu. Setelah selesai, buka **sesi baru** dan ketik `/windows-glowup`.
+Claude akan menjalankan Cara A untukmu. Setelah selesai, buka **sesi baru** dan ketik `/windows-debloat`.
 
 > `/plugin` tidak tersedia di kotak chat aplikasi desktop. Pakai Cara A atau C.
 
