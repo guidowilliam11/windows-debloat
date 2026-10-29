@@ -1,4 +1,4 @@
-# ✨ Claude Glow-Up
+# 🧹 Claude Debloat
 
 Plugin [Claude Code](https://claude.com/claude-code) untuk bikin Windows kamu **lega, ringan dan sehat**, dengan aman dan terukur.
 
@@ -15,7 +15,7 @@ claude plugin install windows-glowup@claude-glowup
 
 ```
 /plugin marketplace add guidowilliam11/claude-glowup
-/plugin install windows-glowup@claude-glowup
+/plugin install windows-debloat@claude-glowup
 ```
 
 **Cara C: dari aplikasi desktop Claude (tab Code):** ketik di chat:
@@ -31,25 +31,26 @@ Claude akan menjalankan Cara A untukmu. Setelah selesai, buka **sesi baru** dan 
 Lalu jalankan:
 
 ```
-/windows-glowup bersihkan dan percepat laptop saya
+/windows-debloat bersihkan dan percepat laptop saya
 ```
 
 > Disarankan pakai model **Opus 5.5**. Update ke versi terbaru: `/plugin marketplace update claude-glowup`.
 
 ## Apa yang dilakukan
 
-1. **Survei paralel.** 5 agent jalan bersamaan, semua read-only dengan angka nyata:
+1. **Debloat Windows.** Pakai [Win11Debloat](https://github.com/Raphire/Win11Debloat): hapus bloatware, matikan telemetri, iklan, Copilot, Recall dan pencarian Bing di Start. Ada level **Lite** (tanpa hapus app), **Defaults** atau **Custom**. Skrip diunduh, hash-nya ditampilkan, restore point dibuat dulu, dan hasilnya dicek jujur (tidak percaya "completed" begitu saja).
+2. **Survei paralel.** 5 agent jalan bersamaan, semua read-only dengan angka nyata:
    - **Disk:** termasuk scan cepat file berat (±1,8 juta file dalam ±2 menit) yang dikelompokkan per kategori.
    - **Proyek dev:** node_modules, .next, target dan sejenisnya, termasuk di dalam worktree.
    - **RAM & Startup.**
    - **Kesehatan & Kecepatan:** apakah disk, RAM dan CPU jalan sesuai kelasnya.
    - **IDE & Ekstensi:** editor dobel, ekstensi berat, versi lama yang tertinggal, dan ekstensi yang terpasang di beberapa editor.
-2. **Laporan tiga kategori.** ✅ aman dihapus · ⚠️ kamu yang putuskan · ⛔ jangan disentuh (dengan alasannya). Tidak ada yang dihapus sebelum kamu memilih.
-3. **Eksekusi aman.**
+3. **Laporan tiga kategori.** ✅ aman dihapus · ⚠️ kamu yang putuskan · ⛔ jangan disentuh (dengan alasannya). Tidak ada yang dihapus sebelum kamu memilih.
+4. **Eksekusi aman.**
    - Cache dan artefak build (`node_modules`, `.next`, Rust `target`, Temp, cache browser) dihapus dengan cara yang tidak ikut menelusuri junction.
    - Perubahan sistem (service → Manual, startup off, uninstall, DISM/SFC, chkdsk) dibuatkan **skrip yang kamu jalankan sendiri sebagai Administrator**, lengkap dengan `undo.ps1`.
    - Update driver dan aplikasi lewat winget dengan daftar terkurasi (patch keamanan dulu, versi mayor database dan IDE tidak disentuh).
-4. **Laporan sebelum → sesudah**, diukur ulang secara live.
+5. **Laporan sebelum → sesudah**, diukur ulang secara live.
 
 ## Hasil nyata (laptop pertama)
 
@@ -66,7 +67,7 @@ Copy isi [`PROMPT.md`](PROMPT.md) dan paste ke Claude Code.
 
 ## Keamanan
 
-- Plugin ini tidak menyimpan dan tidak mengirim data ke mana pun. Semua skrip PowerShell bisa dibaca di [`plugins/windows-glowup/skills/windows-glowup/scripts`](plugins/windows-glowup/skills/windows-glowup/scripts).
+- Plugin ini tidak menyimpan dan tidak mengirim data ke mana pun. Semua skrip PowerShell bisa dibaca di [`plugins/windows-debloat/skills/windows-debloat/scripts`](plugins/windows-debloat/skills/windows-debloat/scripts).
 - Baca dulu setiap skrip yang diminta untuk dijalankan sebagai Administrator.
 - Dipakai dengan risiko sendiri. Backup data penting sebelum menghapus atau meng-uninstall apa pun.
 

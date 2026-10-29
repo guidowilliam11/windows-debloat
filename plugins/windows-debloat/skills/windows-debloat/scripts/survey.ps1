@@ -1,4 +1,4 @@
-# Read-only Windows survey for the windows-glowup skill. Nothing is changed.
+# Read-only Windows survey for the windows-debloat skill. Nothing is changed.
 # Usage: powershell -ExecutionPolicy Bypass -File survey.ps1 -Section disk|dev|ram|health|all [-CodeRoot <folder>]
 param(
   [ValidateSet('disk','dev','ram','health','all')][string]$Section = 'all',

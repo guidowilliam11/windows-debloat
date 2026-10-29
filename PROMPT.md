@@ -1,9 +1,9 @@
-# Windows Glow-Up: prompt siap pakai
+# Windows Debloat: prompt siap pakai
 
 **Cara pakai:** buka Claude Code (desktop app → tab Code, atau `claude` di terminal), pilih model **Opus 5.5**, aktifkan mode auto kalau ada, lalu paste prompt di bawah.
 
-> Kalau folder skill `windows-glowup` sudah ada di `%USERPROFILE%\.claude\skills\`, cukup ketik:
-> **`/windows-glowup bersihkan dan percepat laptop saya`**
+> Kalau folder skill `windows-debloat` sudah ada di `%USERPROFILE%\.claude\skills\`, cukup ketik:
+> **`/windows-debloat bersihkan dan percepat laptop saya`**
 
 ---
 
@@ -30,7 +30,7 @@ Tanya saya mau yang mana. JANGAN hapus apa pun sebelum saya pilih.
 
 FASE 3: EKSEKUSI
 - Yang level user (artefak dev, cache user) boleh kamu hapus langsung. Pakai `cmd /c rmdir /s /q` supaya junction tidak ikut ditelusuri. Setelahnya cek `git status` tiap repo dan bilang apa yang perlu di-install ulang.
-- Semua yang menyentuh SETTING SISTEM (service, startup HKLM, uninstall, DISM/SFC, chkdsk) JANGAN kamu jalankan sendiri. Buatkan skrip .ps1 di Documents\windows-glowup\, dengan:
+- Semua yang menyentuh SETTING SISTEM (service, startup HKLM, uninstall, DISM/SFC, chkdsk) JANGAN kamu jalankan sendiri. Buatkan skrip .ps1 di Documents\windows-debloat\, dengan:
     • cek admin di baris awal (berhenti kalau bukan admin)
     • tulisan GAGAL yang jujur kalau suatu langkah gagal, jangan pernah tulis "OK" palsu
     • service pihak ketiga → Manual (bukan Disabled), startup → off lewat StartupApproved, plus undo.ps1

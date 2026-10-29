@@ -1,0 +1,12 @@
+{
+  "name": "windows-debloat",
+  "version": "1.2.0",
+  "description": "Debloat & tune-up Windows lengkap: hapus bloatware, telemetri, iklan, Copilot/Recall (Win11Debloat), bersihkan disk, lega-kan RAM, rapikan startup & service, audit IDE & ekstensi, scan file berat, cek kecepatan, perbaiki disk/sistem, update driver & aplikasi.",
+  "author": {
+    "name": "Guido William"
+  },
+  "homepage": "https://github.com/guidowilliam11/claude-glowup",
+  "repository": "https://github.com/guidowilliam11/claude-glowup",
+  "license": "MIT",
+  "keywords": ["windows", "debloat", "bloatware", "privacy", "cleanup", "performance", "disk", "ram", "maintenance"]
+}

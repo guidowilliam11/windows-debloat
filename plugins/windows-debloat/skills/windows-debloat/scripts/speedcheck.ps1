@@ -29,7 +29,7 @@ function Judge([double]$v, [double]$ok) { if ($v -ge $ok) { 'WAJAR' } elseif ($v
 
 # Write test: buffered writes, then FlushFileBuffers (fsync). Timing includes the flush, so the OS
 # cache cannot inflate the number. Small writes with WriteThrough under-report NVMe, so it is not used.
-$tmp = Join-Path $env:TEMP ("glowup-speedtest-{0}.bin" -f [guid]::NewGuid().ToString('N').Substring(0,8))
+$tmp = Join-Path $env:TEMP ("debloat-speedtest-{0}.bin" -f [guid]::NewGuid().ToString('N').Substring(0,8))
 if ($env:TEMP -notlike "$($Drive):*") { $tmp = Join-Path "$($Drive):\" (Split-Path $tmp -Leaf) }
 $buf = New-Object byte[] (16MB); (New-Object Random 42).NextBytes($buf)
 $total = [int64]$TestGB * 1GB
